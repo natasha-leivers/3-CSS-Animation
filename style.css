@@ -36,7 +36,18 @@ nav a:hover {
     color: #ff9900;
 }
 
-.header-slideshow {}
+.header-slideshow {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.header-slideshow img {
+    width: 100%;
+    height: auto;
+}
 
 section {
     padding: 2rem;
@@ -45,16 +56,36 @@ section {
 .hero-section {
     display: flex;
     flex-direction: row;
+    padding: 2rem 10rem;
+    gap: 2rem;
+}
+
+.hero-section img {
+    width: 30%;
+    height: auto;
 }
 
 .sponsors-section {
     background-color: #bbbbbb;
     text-align: center;
+    padding: 4rem 10rem;
+}
+
+.sponsors-section p {
+    padding-bottom: 1rem;
 }
 
 .sponsor-images {
+    width: 100%;
+    justify-content: center;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+}
+
+.sponsor-images img {
+    width: 20%;
+    height: auto;
 }
 
 .footer-info {
