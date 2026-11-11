@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport"
+           content="width=device-width, initial-scale=1.0">
+     <title>Home</title>
+     <link rel="stylesheet"
+           href="style.css">
+</head>
+
+<body>
+     <header>
+          <img src="images/logo"
+               alt="Company Logo">
+          <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="purchase.html">Purchase</a></li>
+                    <li><a href="featured.html">Featured</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+               </ul>
+          </nav>
+     </header>
+
+     <main>
+          <section class="header-slideshow">
+               <img src="images/banner1.jpg"
+                    alt="Banner Image 1">
+               <img src="images/banner2.jpg"
+                    alt="Banner Image 2">
+               <img src="images/banner3.jpg"
+                    alt="Banner Image 3">
+          </section>
+
+          <section class="hero-section">
+               <img src="images/hero-image.png"
+                    alt="hero image">
+               <div class="hero-text">
+                    <h2>Hero Title Example</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button>Read More</button>
+               </div>
+          </section>
+
+          <section class="sponsors-section">
+               <h1>Sponsors Example</h1>
+               <p>Sponsors description</p>
+               <div class="sponsor-images">
+                    <img src="images/sponsor1.png"
+                         alt="Sponsor 1">
+                    <img src="images/sponsor2.png"
+                         alt="Sponsor 2">
+                    <img src="images/sponsor3.png"
+                         alt="Sponsor 3">
+                    <img src="images/sponsor4.png"
+                         alt="Sponsor 4">
+                    <img src="images/sponsor5.png"
+                         alt="Sponsor 5">
+               </div>
+          </section>
+     </main>
+
+     <footer>
+          <div class="footer-info">
+               <div class="contact-form">
+                    <h1>Contact Us</h1>
+                    <p>Send us a message</p>
+                    <form action="submit_form.php"
+                          method="post">
+                         <label for="name">Full Name:</label>
+                         <input type="text"
+                                id="name"
+                                name="name"
+                                required><br><br>
+
+                         <label for="email">Your Email:</label>
+                         <input type="email"
+                                id="email"
+                                name="email"
+                                required><br><br>
+
+                         <label for="message">Your Message:</label><br>
+                         <textarea id="message"
+                                   name="message"
+                                   rows="4"
+                                   cols="50"
+                                   required></textarea><br><br>
+
+                         <input type="submit"
+                                value="Submit">
+                    </form>
+               </div>
+
+               <div class="sitemap">
+                    <h1>SiteMap</h1>
+                    <p>All our pages</p>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="purchase.html">Purchase</a></li>
+                         <li><a href="featured.html">Featured</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                    </ul>
+               </div>
+
+               <div class="company-details">
+                    <img src="images/logo.png"
+                         alt="Company Logo">
+
+                    <p>0860 555 3695</p>
+                    <p>customerservice@companyname.com</p>
+               </div>
+          </div>
+          <div class="copyright">
+               <p>&copy; 2024 Your Company. All rights reserved.</p>
+          </div>
+     </footer>
+</body>
+
+</html>
