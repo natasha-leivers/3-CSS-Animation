@@ -12,8 +12,8 @@
 
 <body>
      <header>
-          <img src="images/logo.png"
-               alt="Company Logo">
+          <a href="index.html"><img src="images/logo.png"
+                    alt="Company Logo"></a>
           <nav>
                <ul>
                     <li><a href="index.html">Home</a></li>
@@ -26,15 +26,76 @@
      </header>
 
      <main>
-          <section class="header-slideshow">
-               <img src="images/banner1.jpg"
-                    alt="Banner Image 1">
-               <img src="images/banner2.jpg"
-                    alt="Banner Image 2">
-               <img src="images/banner3.jpg"
-                    alt="Banner Image 3">
-          </section>
+          <section>
+               <div class="image-slideshow">
+                    <!-- Radio Controllers (Hidden) -->
+                    <input type="radio"
+                           name="slider"
+                           id="s1"
+                           checked>
+                    <input type="radio"
+                           name="slider"
+                           id="s2">
+                    <input type="radio"
+                           name="slider"
+                           id="s3">
 
+                    <!-- Image Track -->
+                    <div class="slides-track">
+                         <div class="slide">
+                              <a href="#link1">
+                                   <img src="images/banner1.jpg"
+                                        alt="Slide 1"></a>
+                         </div>
+                         <div class="slide">
+                              <a href="#link2">
+                                   <img src="images/banner2.jpg"
+                                        alt="Slide 2"></a>
+                         </div>
+                         <div class="slide">
+                              <a href="#link3">
+                                   <img src="images/banner3.jpg"
+                                        alt="Slide 3"></a>
+                         </div>
+                    </div>
+
+                    <!-- Left & Right Arrows -->
+                    <div class="arrows arrow-s1">
+                         <label for="s3"
+                                class="prev"
+                                aria-label="Previous slide">&#10094;</label>
+                         <label for="s2"
+                                class="next"
+                                aria-label="Next slide">&#10095;</label>
+                    </div>
+                    <div class="arrows arrow-s2">
+                         <label for="s1"
+                                class="prev"
+                                aria-label="Previous slide">&#10094;</label>
+                         <label for="s3"
+                                class="next"
+                                aria-label="Next slide">&#10095;</label>
+                    </div>
+                    <div class="arrows arrow-s3">
+                         <label for="s2"
+                                class="prev"
+                                aria-label="Previous slide">&#10094;</label>
+                         <label for="s1"
+                                class="next"
+                                aria-label="Next slide">&#10095;</label>
+                    </div>
+
+                    <!-- Bottom Indicators -->
+                    <div class="indicators">
+                         <label for="s1"
+                                aria-label="Slide 1"></label>
+                         <label for="s2"
+                                aria-label="Slide 2"></label>
+                         <label for="s3"
+                                aria-label="Slide 3"></label>
+                    </div>
+               </div>
+          </section>
 
           <section class="hero-section">
 
@@ -42,15 +103,11 @@
                     alt="hero image">
 
                <div class="hero-text">
-
                     <h2><span>Hero</span> <span>Title</span> <span>Example</span></h2>
-
 
                     <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
 
-
                     <button>Read More</button>
-
                </div>
 
           </section>
@@ -60,16 +117,31 @@
                <h1>Sponsors Example</h1>
                <p>Sponsors description</p>
                <div class="sponsor-images">
-                    <img src="images/sponsor1.jpg"
-                         alt="Sponsor 1">
-                    <img src="images/sponsor2.jpg"
-                         alt="Sponsor 2">
-                    <img src="images/sponsor3.jpg"
-                         alt="Sponsor 3">
-                    <img src="images/sponsor4.jpg"
-                         alt="Sponsor 4">
-                    <img src="images/sponsor5.jpg"
-                         alt="Sponsor 5">
+                    <div class="image-container">
+                         <img src="images/sponsor1.jpg"
+                              alt="Sponsor 1">
+                         <div class="overlay">Your Information</div>
+                    </div>
+                    <div class="image-container">
+                         <img src="images/sponsor2.jpg"
+                              alt="Sponsor 2">
+                         <div class="overlay">Your Information</div>
+                    </div>
+                    <div class="image-container">
+                         <img src="images/sponsor3.jpg"
+                              alt="Sponsor 3">
+                         <div class="overlay">Your Information</div>
+                    </div>
+                    <div class="image-container">
+                         <img src="images/sponsor4.jpg"
+                              alt="Sponsor 4">
+                         <div class="overlay">Your Information</div>
+                    </div>
+                    <div class="image-container">
+                         <img src="images/sponsor5.jpg"
+                              alt="Sponsor 5">
+                         <div class="overlay">Your Information</div>
+                    </div>
                </div>
           </section>
      </main>
@@ -100,8 +172,8 @@
                                    cols="50"
                                    required></textarea><br><br>
 
-                         <input type="submit"
-                                value="Submit">
+                         <button type="submit"
+                                 value="Submit">Submit</button>
                     </form>
                </div>
 
